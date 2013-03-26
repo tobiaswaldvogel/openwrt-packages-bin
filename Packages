@@ -1398,15 +1398,15 @@ Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  For more information please see the avahi documentation.
 
 Package: base-files
-Version: 136-r36115
+Version: 137-r36132
 Depends: libc, librt, libpthread, netifd, procd
 Source: package/base-files
 Section: base
 Architecture: ib42x0
-Installed-Size: 30321
-Filename: base-files_136-r36115_ib42x0.ipk
-Size: 30967
-MD5Sum: 918cc9565f7ed39ab2aee674db91b29c
+Installed-Size: 30429
+Filename: base-files_137-r36132_ib42x0.ipk
+Size: 31090
+MD5Sum: 7e0680a6a46a09656972f87b444b6134
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: bind-check
@@ -2332,6 +2332,37 @@ Size: 152549
 MD5Sum: b9477908496763d87ca190f0906e5cf8
 Description:  Improved iTunes server
 
+Package: gdb
+Version: 7.5-1
+Depends: libc, librt, libpthread, libthread-db, zlib, libreadline, libncurses, zlib
+Source: package/devel/gdb
+SourceFile: gdb-7.5.tar.bz2
+SourceURL: @GNU/gdb
+Section: devel
+Architecture: ib42x0
+Installed-Size: 1374743
+Filename: gdb_7.5-1_ib42x0.ipk
+Size: 1371812
+MD5Sum: 487f92b7396302fe5e375fde78f30af5
+Description:  GDB, the GNU Project debugger, allows you to see what is going on `inside'
+ another program while it executes -- or what another program was doing at the
+ moment it crashed.
+
+Package: gdbserver
+Version: 7.5-1
+Depends: libc, librt, libpthread, libthread-db, zlib
+Source: package/devel/gdb
+SourceFile: gdb-7.5.tar.bz2
+SourceURL: @GNU/gdb
+Section: devel
+Architecture: ib42x0
+Installed-Size: 95493
+Filename: gdbserver_7.5-1_ib42x0.ipk
+Size: 96024
+MD5Sum: cfd4eb21fb50129ee77660b6348d0fd4
+Description:  GDBSERVER is a program that allows you to run GDB on a different machine than the
+ one which is running the program being debugged.
+
 Package: giflib
 Version: 4.1.6-1
 Depends: libc, librt, libpthread
@@ -2363,6 +2394,18 @@ Filename: glib2_2.34.3-1_ib42x0.ipk
 Size: 764367
 MD5Sum: 0447b4b1ee58a65285b88a407d8759dd
 Description:  The GLib library of C routines
+
+Package: glibc-oabi
+Version: 1.0-1
+Depends: libc, librt, libpthread
+Source: feeds/addpack/glibc-oabi
+Section: devel
+Architecture: ib42x0
+Installed-Size: 859580
+Filename: glibc-oabi_1.0-1_ib42x0.ipk
+Size: 855701
+MD5Sum: caa094c6cc210e165ec78efd3c6917f0
+Description:  Glibc OABI version
 
 Package: gptfdisk
 Version: 0.8.6-1
@@ -2661,10 +2704,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 117841
+Installed-Size: 117845
 Filename: kmod-ath9k-common_3.8+2013-02-22-1_ib42x0.ipk
-Size: 116552
-MD5Sum: 81e1e04ef301fccd29f478b5b1e3c6e1
+Size: 116578
+MD5Sum: e767037190d26cd2eee36c52795813e1
 Description:  Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
 
 Package: kmod-ath9k-htc
@@ -2676,10 +2719,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 99560
+Installed-Size: 99562
 Filename: kmod-ath9k-htc_3.8+2013-02-22-1_ib42x0.ipk
-Size: 100261
-MD5Sum: 830e9492344b16a6591578a7a3ecaba2
+Size: 100234
+MD5Sum: 17bb148c398bb18fbb940ccbbec65c78
 Description:  This module adds support for wireless adapters based on
  Atheros USB AR9271 and AR7010 family of chipsets.
 
@@ -2692,10 +2735,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 9349
+Installed-Size: 9350
 Filename: kmod-ath_3.8+2013-02-22-1_ib42x0.ipk
-Size: 10068
-MD5Sum: b4061ea9f9fe6adbebe018a909321a72
+Size: 10029
+MD5Sum: 0509e110b4c63c1e730f764684e81043
 Description:  This module contains some common parts needed by Atheros Wireless drivers.
 
 Package: kmod-atm
@@ -2706,10 +2749,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 25940
+Installed-Size: 25953
 Filename: kmod-atm_3.8-1_ib42x0.ipk
-Size: 26568
-MD5Sum: df3a3d84a3cad5b070e18a3ca6bb2313
+Size: 26591
+MD5Sum: 43be2c8114a6766c5bb76db89375abfc
 Description:  Kernel modules for ATM support
 
 Package: kmod-button-hotplug
@@ -2718,10 +2761,10 @@ Depends: kernel (=3.8-1-ib42x0)
 Source: package/system/button-hotplug
 Section: kernel
 Architecture: ib42x0
-Installed-Size: 2919
+Installed-Size: 2920
 Filename: kmod-button-hotplug_3.8-3_ib42x0.ipk
-Size: 3559
-MD5Sum: 49670ad726a737ed6b0bebaf47083c47
+Size: 3562
+MD5Sum: fd684956dae3cdacd42d2edb685363d2
 Description:  Kernel module to generate button hotplug events
 
 Package: kmod-cfg80211
@@ -2733,10 +2776,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 97403
+Installed-Size: 97406
 Filename: kmod-cfg80211_3.8+2013-02-22-1_ib42x0.ipk
-Size: 98069
-MD5Sum: 3a09d24c6a26c45804e6ec85a9b105b9
+Size: 98057
+MD5Sum: e7f3730a918f65549e0553a469405a0b
 Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
 
 Package: kmod-crypto-aes
@@ -2747,10 +2790,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 106
+Installed-Size: 105
 Filename: kmod-crypto-aes_3.8-1_ib42x0.ipk
-Size: 660
-MD5Sum: f4731682e81f7afae9f5eea781ca720f
+Size: 659
+MD5Sum: 3a3dd2555163369175437c3ec0e4ef69
 Description:  AES cipher CryptoAPI module
 
 Package: kmod-crypto-arc4
@@ -2761,10 +2804,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 106
+Installed-Size: 105
 Filename: kmod-crypto-arc4_3.8-1_ib42x0.ipk
-Size: 675
-MD5Sum: 8b382268ac791af642352cdc3d0e8991
+Size: 671
+MD5Sum: d687bab7dd7809b8b2945a269c9cbfd6
 Description:  ARC4 (RC4) cipher CryptoAPI module
 
 Package: kmod-crypto-authenc
@@ -2775,10 +2818,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4429
+Installed-Size: 4432
 Filename: kmod-crypto-authenc_3.8-1_ib42x0.ipk
-Size: 5107
-MD5Sum: aec0a28d9d641e5902859c8365b3f4e5
+Size: 5115
+MD5Sum: 3531015190adc7ae75a143a6d622f1ac
 Description:  Combined mode wrapper for IPsec
 
 Package: kmod-crypto-cbc
@@ -2791,8 +2834,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-crypto-cbc_3.8-1_ib42x0.ipk
-Size: 670
-MD5Sum: 9bf2cb2d32d271e480385b4ef97b702a
+Size: 675
+MD5Sum: e577366a0b92f0924526675a4d90f00e
 Description:  Cipher Block Chaining CryptoAPI module
 
 Package: kmod-crypto-core
@@ -2806,7 +2849,7 @@ Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-crypto-core_3.8-1_ib42x0.ipk
 Size: 649
-MD5Sum: 4cc41c0b047b24824e818a7d0b2f9d71
+MD5Sum: 72249f4d64d531007c84369301a3fc14
 Description:  Core CryptoAPI modules
 
 Package: kmod-crypto-crc32c
@@ -2819,8 +2862,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-crypto-crc32c_3.8-1_ib42x0.ipk
-Size: 654
-MD5Sum: c860776524ebaa02be4bc012514ea1a6
+Size: 659
+MD5Sum: fc7257eebac39bcbe147fe5744dc4f9e
 Description:  CRC32c CRC module
 
 Package: kmod-crypto-deflate
@@ -2831,10 +2874,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 105
+Installed-Size: 106
 Filename: kmod-crypto-deflate_3.8-1_ib42x0.ipk
 Size: 677
-MD5Sum: 1bc46d4efd915745793c8b533904bebc
+MD5Sum: a5e082c51826ee067b29d8cc93a30925
 Description:  Deflate compression CryptoAPI module
 
 Package: kmod-crypto-des
@@ -2845,10 +2888,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 105
+Installed-Size: 106
 Filename: kmod-crypto-des_3.8-1_ib42x0.ipk
-Size: 657
-MD5Sum: 31a3e722f7fdf4d52d25f81bbfb37e74
+Size: 662
+MD5Sum: 500904407462fc4aaae23719e5f1c71d
 Description:  DES/3DES cipher CryptoAPI module
 
 Package: kmod-crypto-ecb
@@ -2859,10 +2902,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 105
+Installed-Size: 106
 Filename: kmod-crypto-ecb_3.8-1_ib42x0.ipk
-Size: 672
-MD5Sum: 2853bca774b889329f738d8da38cc605
+Size: 674
+MD5Sum: 835a4665990e51a1b06fa16a038ce94d
 Description:  Electronic CodeBook CryptoAPI module
 
 Package: kmod-crypto-hash
@@ -2875,8 +2918,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-crypto-hash_3.8-1_ib42x0.ipk
-Size: 658
-MD5Sum: 791a0a67cb4863ad6be2b94ed7a1f2c0
+Size: 655
+MD5Sum: 1c8fa5bdd141513b0f62bd440e8f1292
 Description:  CryptoAPI hash support
 
 Package: kmod-crypto-hmac
@@ -2889,8 +2932,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-crypto-hmac_3.8-1_ib42x0.ipk
-Size: 664
-MD5Sum: 2c5a9a990d284a41b14668bed76e5ba5
+Size: 670
+MD5Sum: 25a82048a8a421d4d7632e1a2f3f2347
 Description:  HMAC digest CryptoAPI module
 
 Package: kmod-crypto-iv
@@ -2904,7 +2947,7 @@ Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-crypto-iv_3.8-1_ib42x0.ipk
 Size: 674
-MD5Sum: 30698f821d3ddf5da21808ab6316ac1b
+MD5Sum: 97bd2ab41c953db5add01b56981f2861
 Description:  CryptoAPI initialization vectors
 
 Package: kmod-crypto-manager
@@ -2915,10 +2958,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 106
+Installed-Size: 105
 Filename: kmod-crypto-manager_3.8-1_ib42x0.ipk
-Size: 665
-MD5Sum: 75b84470c818ed6a6a01e336711253f1
+Size: 663
+MD5Sum: 8295a881ca5cb214a0dd8e1f5ceca963
 Description:  CryptoAPI algorithm manager
 
 Package: kmod-crypto-md5
@@ -2932,7 +2975,7 @@ Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-crypto-md5_3.8-1_ib42x0.ipk
 Size: 663
-MD5Sum: e51d150620bc97bd65ae0af4a367b2d2
+MD5Sum: a395a666d20d4b5f8657e32d401bfc18
 Description:  MD5 digest CryptoAPI module
 
 Package: kmod-crypto-rng
@@ -2943,10 +2986,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 106
+Installed-Size: 105
 Filename: kmod-crypto-rng_3.8-1_ib42x0.ipk
-Size: 665
-MD5Sum: 45e87ecedd5b3245fd49b956f41619b4
+Size: 662
+MD5Sum: 05b1b745ff7da06cffddb9bb66c3c445
 Description:  CryptoAPI random number generation
 
 Package: kmod-crypto-sha1
@@ -2960,7 +3003,7 @@ Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-crypto-sha1_3.8-1_ib42x0.ipk
 Size: 666
-MD5Sum: c787d655633cfd27241f8e246c0c1a2e
+MD5Sum: 5832c0b3f65e30ad84a18d1299c523bf
 Description:  SHA1 digest CryptoAPI module
 
 Package: kmod-crypto-user
@@ -2971,10 +3014,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 9696
+Installed-Size: 9692
 Filename: kmod-crypto-user_3.8-1_ib42x0.ipk
-Size: 10403
-MD5Sum: c16625675eb39b82ee9531401e2ebfe3
+Size: 10394
+MD5Sum: 69ce2705cf34d9cec2ceeed5ad5b34e0
 Description:  CryptoAPI userspace interface
 
 Package: kmod-crypto-wq
@@ -2985,10 +3028,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 106
+Installed-Size: 105
 Filename: kmod-crypto-wq_3.8-1_ib42x0.ipk
-Size: 655
-MD5Sum: a705ce3ba38e2bc5fcc62afe74392385
+Size: 658
+MD5Sum: 731bcd4f0fad72a09c4ef2a695a920c2
 Description:  CryptoAPI work queue handling
 
 Package: kmod-eeprom-93cx6
@@ -2999,10 +3042,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 1956
+Installed-Size: 1959
 Filename: kmod-eeprom-93cx6_3.8-1_ib42x0.ipk
-Size: 2661
-MD5Sum: a6c6ca3191763537e140977c34072d6a
+Size: 2659
+MD5Sum: c4d5efe051437c7d5a12a427d0316680
 Description:  Kernel module for EEPROM 93CX6 support
 
 Package: kmod-fs-ecryptfs
@@ -3011,10 +3054,10 @@ Depends: kernel (=3.8-1-ib42x0)
 Source: feeds/addpack/kmod-fs-ecryptfs
 Section: kernel
 Architecture: ib42x0
-Installed-Size: 44350
+Installed-Size: 44352
 Filename: kmod-fs-ecryptfs_3.8-1_ib42x0.ipk
-Size: 45022
-MD5Sum: 88ea4b91ecbc8c427a1c027a7eb29506
+Size: 45012
+MD5Sum: 365cb35dd06151b6cd5db6e18707ed7f
 Description:  Kernel module for eCrypt support
 
 Package: kmod-fs-exportfs
@@ -3027,8 +3070,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-fs-exportfs_3.8-1_ib42x0.ipk
-Size: 663
-MD5Sum: 16a0809973ee8d71c87966ee111a5ec0
+Size: 668
+MD5Sum: 609c50fe0bb13477ace66fd288180a35
 Description:  Kernel module for exportfs. Needed for some other modules.
 
 Package: kmod-fs-hfs
@@ -3039,10 +3082,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 27295
+Installed-Size: 27300
 Filename: kmod-fs-hfs_3.8-1_ib42x0.ipk
-Size: 27955
-MD5Sum: 6af6b7505942b749f1f2602fb54d9944
+Size: 27962
+MD5Sum: 3d7797d9b37da233c226ba68670f4abd
 Description:  Kernel module for HFS filesystem support
 
 Package: kmod-fs-hfsplus
@@ -3053,10 +3096,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 48668
+Installed-Size: 48673
 Filename: kmod-fs-hfsplus_3.8-1_ib42x0.ipk
-Size: 49297
-MD5Sum: d981f89c137c065bad47283afe4d86cf
+Size: 49334
+MD5Sum: 26b87c63d32f3ad947766ac41c0b43ae
 Description:  Kernel module for HFS+ filesystem support
 
 Package: kmod-fs-isofs
@@ -3067,10 +3110,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 16966
+Installed-Size: 16971
 Filename: kmod-fs-isofs_3.8-1_ib42x0.ipk
-Size: 17708
-MD5Sum: 6fe62b9b0de24bc0be5c1b4d74915a93
+Size: 17713
+MD5Sum: 7bb4cfd2725c64544e9628623bf31ec4
 Description:  Kernel module for ISO9660 filesystem support
 
 Package: kmod-fs-nfs-common
@@ -3083,8 +3126,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-fs-nfs-common_3.8-1_ib42x0.ipk
-Size: 659
-MD5Sum: c3800bdd0b57ca419d37feeb877c83d6
+Size: 657
+MD5Sum: d8c03a143312909f11d3a05c06f814df
 Description:  Common NFS filesystem modules
 
 Package: kmod-fs-nfs
@@ -3097,8 +3140,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-fs-nfs_3.8-1_ib42x0.ipk
-Size: 660
-MD5Sum: be042d05fd017398959dd0a7173742fa
+Size: 657
+MD5Sum: 15295639605df5a41725db710100caee
 Description:  Kernel module for NFS support
 
 Package: kmod-fs-nfsd
@@ -3111,8 +3154,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-fs-nfsd_3.8-1_ib42x0.ipk
-Size: 677
-MD5Sum: 6d6da41961c7929f056c974e1fe4812c
+Size: 673
+MD5Sum: 969094a173bdddb48caf5c93758d98ab
 Description:  Kernel module for NFS kernel server support
 
 Package: kmod-fs-udf
@@ -3123,10 +3166,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 46913
+Installed-Size: 46914
 Filename: kmod-fs-udf_3.8-1_ib42x0.ipk
-Size: 47496
-MD5Sum: 5a5f6b96ef009d60410469d37c11ac7c
+Size: 47507
+MD5Sum: 6be6a408cf9493bd127478e2606240f0
 Description:  Kernel module for UDF filesystem support
 
 Package: kmod-fuse
@@ -3137,10 +3180,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 36244
+Installed-Size: 36247
 Filename: kmod-fuse_3.8-1_ib42x0.ipk
-Size: 36960
-MD5Sum: 476d2c6089084b067ff671624ee7c558
+Size: 36964
+MD5Sum: 7dd2174b93d7d9a25c2b2ce00fc64278
 Description:  Kernel module for userspace filesystem support
 
 Package: kmod-gre
@@ -3151,10 +3194,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 12373
+Installed-Size: 12372
 Filename: kmod-gre_3.8-1_ib42x0.ipk
-Size: 13053
-MD5Sum: b23f7cdb09f03fe91267148fb5c489de
+Size: 13062
+MD5Sum: 4f5fe5d67ab4150eabd3397e93013134
 Description:  Generic Routing Encapsulation support
 
 Package: kmod-hid
@@ -3167,8 +3210,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 33701
 Filename: kmod-hid_3.8-1_ib42x0.ipk
-Size: 34317
-MD5Sum: 50a15b2c20d6450b64762fd203996458
+Size: 34298
+MD5Sum: e61b30934a9fcbc0ba9bedfeb0eed740
 Description:  Kernel modules for HID devices
 
 Package: kmod-input-core
@@ -3181,8 +3224,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-input-core_3.8-1_ib42x0.ipk
-Size: 659
-MD5Sum: 532a7b5be93d63890a914c765beccbee
+Size: 656
+MD5Sum: 3059adfc3e72ebc14701cb9f474804a9
 Description:  Kernel modules for support of input device
 
 Package: kmod-input-evdev
@@ -3193,10 +3236,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 6250
+Installed-Size: 6252
 Filename: kmod-input-evdev_3.8-1_ib42x0.ipk
-Size: 6943
-MD5Sum: dfc0b4259a15cfc195a49a1c69abd3a9
+Size: 6948
+MD5Sum: a17ece4d485b6dc570e2915b715373a6
 Description:  Kernel modules for support of input device events
 
 Package: kmod-ip6-tunnel
@@ -3207,10 +3250,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 10857
+Installed-Size: 10862
 Filename: kmod-ip6-tunnel_3.8-1_ib42x0.ipk
-Size: 11583
-MD5Sum: 7cde8146bf9f78fc91b69c01e0a8f409
+Size: 11589
+MD5Sum: fde6aec2d2efb44f4ce677a7ac06f526
 Description:  Kernel modules for IPv6-in-IPv6 and IPv4-in-IPv6 tunnelling
 
 Package: kmod-ipsec4
@@ -3221,10 +3264,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 13673
+Installed-Size: 13680
 Filename: kmod-ipsec4_3.8-1_ib42x0.ipk
-Size: 14421
-MD5Sum: 7bf5710840eff6b08e7d53ebb0cda342
+Size: 14433
+MD5Sum: f3f5e0ec7f07d73e703fdc7ecca1ce56
 Description:  Kernel modules for IPsec support in IPv4.
  Includes:
  - ah4
@@ -3243,10 +3286,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 14281
+Installed-Size: 14286
 Filename: kmod-ipsec6_3.8-1_ib42x0.ipk
-Size: 15029
-MD5Sum: 591492c408f9ae3da861ce203d4151f4
+Size: 15039
+MD5Sum: 79ebffdc1fa17387bd8a01287fb6b87b
 Description:  Kernel modules for IPsec support in IPv6.
  Includes:
  - ah6
@@ -3265,10 +3308,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 33533
+Installed-Size: 33537
 Filename: kmod-ipsec_3.8-1_ib42x0.ipk
-Size: 34368
-MD5Sum: 9fe215edf869520b6aa3f20b74ee1fc4
+Size: 34384
+MD5Sum: 95335a28b068ac61709d28366d684ab0
 Description:  Kernel modules for IPsec support in both IPv4 and IPv6.
  Includes:
  - af_key
@@ -3283,10 +3326,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 2061
+Installed-Size: 2062
 Filename: kmod-iptunnel4_3.8-1_ib42x0.ipk
-Size: 2713
-MD5Sum: 7ef8444a60867dc008d83d74f58604ed
+Size: 2709
+MD5Sum: fdbdcfea7f7bd80975fcffe323555b2e
 Description:  Kernel modules for IPv4 tunneling
 
 Package: kmod-iptunnel6
@@ -3297,10 +3340,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 2092
+Installed-Size: 2090
 Filename: kmod-iptunnel6_3.8-1_ib42x0.ipk
-Size: 2755
-MD5Sum: 8811c3710984a0f04b629502f018c4bb
+Size: 2746
+MD5Sum: 67cc2bcd4eaa7e896218a5b965b77bc4
 Description:  Kernel modules for IPv6 tunneling
 
 Package: kmod-ipv6
@@ -3311,10 +3354,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 137221
+Installed-Size: 137223
 Filename: kmod-ipv6_3.8-1_ib42x0.ipk
-Size: 137831
-MD5Sum: 9b7e995f39dd3de23a3d03ba8280c3ed
+Size: 137838
+MD5Sum: 6cfe7468d55f8256c6027c240cb03ef0
 Description:  Kernel modules for IPv6 support
 
 Package: kmod-iscsi-scst
@@ -3325,10 +3368,10 @@ SourceFile: scst-2.2.x-4767.tar.bz2
 SourceURL: https://scst.svn.sourceforge.net/svnroot/scst/branches/2.2.x
 Section: kernel
 Architecture: ib42x0
-Installed-Size: 39159
+Installed-Size: 39160
 Filename: kmod-iscsi-scst_3.8+2.2.x-4767-1_ib42x0.ipk
-Size: 39827
-MD5Sum: f2eaaaa8282f71910f354c51932ece6b
+Size: 39816
+MD5Sum: 42f27f23fd2b163f4a993c033bda02e8
 Description:  SCST iscsi support
 
 Package: kmod-lib-crc-ccitt
@@ -3339,10 +3382,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 1616
+Installed-Size: 1610
 Filename: kmod-lib-crc-ccitt_3.8-1_ib42x0.ipk
-Size: 2307
-MD5Sum: 51198faffbb43fa31d6256ef3dd8a24f
+Size: 2308
+MD5Sum: 4f6dbe5383942b3dd2e52f50cf1ea564
 Description:  Kernel module for CRC-CCITT support
 
 Package: kmod-lib-crc-itu-t
@@ -3353,10 +3396,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 106
+Installed-Size: 105
 Filename: kmod-lib-crc-itu-t_3.8-1_ib42x0.ipk
-Size: 664
-MD5Sum: 0335fe3b48f19f935da1e76085aaf8cf
+Size: 661
+MD5Sum: d74effe5594f7ab85bda31963ed12fbc
 Description:  Kernel module for CRC ITU-T V.41 support
 
 Package: kmod-lib-crc32c
@@ -3367,10 +3410,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 104
+Installed-Size: 105
 Filename: kmod-lib-crc32c_3.8-1_ib42x0.ipk
-Size: 661
-MD5Sum: 86c64ddb67393b61d62580ec9a0efc09
+Size: 663
+MD5Sum: b31c60b5f059a2c597124dafc2a8e089
 Description:  Kernel module for CRC32 support
 
 Package: kmod-lib-zlib
@@ -3381,10 +3424,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 105
+Installed-Size: 106
 Filename: kmod-lib-zlib_3.8-1_ib42x0.ipk
-Size: 640
-MD5Sum: 7932334d111b73fc5c27d3a80e26e16b
+Size: 641
+MD5Sum: 964db9fd66c5bb59c7c28a0a1341381d
 Description:  Zlib support
 
 Package: kmod-mac80211
@@ -3396,10 +3439,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 167618
+Installed-Size: 167621
 Filename: kmod-mac80211_3.8+2013-02-22-1_ib42x0.ipk
-Size: 168201
-MD5Sum: d6a772c318e79855836455ce8354bb52
+Size: 168192
+MD5Sum: bed2c3c249acba6b6063ef58f0136471
 Description:  Generic IEEE 802.11 Networking Stack (mac80211)
 
 Package: kmod-mppe
@@ -3410,10 +3453,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4467
+Installed-Size: 4470
 Filename: kmod-mppe_3.8-1_ib42x0.ipk
-Size: 5161
-MD5Sum: 69d3c8eeea7404eb758273a11dfa5f3d
+Size: 5163
+MD5Sum: 1265cbb89ad7152674ae591f6deaf574
 Description:  Kernel modules for Microsoft PPP compression/encryption
 
 Package: kmod-nls-base
@@ -3426,8 +3469,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-nls-base_3.8-1_ib42x0.ipk
-Size: 664
-MD5Sum: 0ec85eb0e53a7ecd443d87a952d3de15
+Size: 666
+MD5Sum: 38031e10f1470b5438102103dd47489f
 Description:  Kernel module for NLS (Native Language Support)
 
 Package: kmod-nls-cp437
@@ -3438,10 +3481,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 106
+Installed-Size: 105
 Filename: kmod-nls-cp437_3.8-1_ib42x0.ipk
-Size: 681
-MD5Sum: dba227780dc0e7a537c4e8bb9b84ed4c
+Size: 680
+MD5Sum: 8b12d673396c3a971733e6688f66c08a
 Description:  Kernel module for NLS Codepage 437 (United States, Canada)
 
 Package: kmod-nls-utf8
@@ -3454,8 +3497,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-nls-utf8_3.8-1_ib42x0.ipk
-Size: 656
-MD5Sum: e9d4ffab9ae66804ba749be8ed3c2616
+Size: 658
+MD5Sum: 87e974707df0df2b8ced5390a65e1879
 Description:  Kernel module for NLS UTF-8
 
 Package: kmod-oprofile
@@ -3466,10 +3509,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 11823
+Installed-Size: 11829
 Filename: kmod-oprofile_3.8-1_ib42x0.ipk
-Size: 12425
-MD5Sum: 855d1d2f44aa2884d199494ab6fb4780
+Size: 12431
+MD5Sum: 7d6e9c1e20e63c5cdcd87b226beaf852
 Description:  Kernel module for support for oprofile system profiling.
 
 Package: kmod-p54-common
@@ -3481,10 +3524,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 18566
+Installed-Size: 18572
 Filename: kmod-p54-common_3.8+2013-02-22-1_ib42x0.ipk
-Size: 19307
-MD5Sum: 46587b438ad6790d960f8e296990e766
+Size: 19272
+MD5Sum: aa23232d4d118fbf608f977e9c6f67a7
 Description:  Prism54 Drivers (COMMON)
 
 Package: kmod-p54-usb
@@ -3496,10 +3539,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 31873
+Installed-Size: 31872
 Filename: kmod-p54-usb_3.8+2013-02-22-1_ib42x0.ipk
-Size: 32696
-MD5Sum: f9333df11fed9d352365c2925bd78176
+Size: 32702
+MD5Sum: cdac7fa8f488c6ba76dd21062d49e360
 Description:  Prism54 Drivers (USB)
 
 Package: kmod-pata-gemini
@@ -3512,8 +3555,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 105
 Filename: kmod-pata-gemini_3.8-1_ib42x0.ipk
-Size: 652
-MD5Sum: e3429b722d35477be0bf02b25f60aebc
+Size: 656
+MD5Sum: 383645482df4c7d4c652575ba15e60dc
 Description:  PATA driver for gemini SoC
 
 Package: kmod-ppp
@@ -3526,8 +3569,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 22207
 Filename: kmod-ppp_3.8-1_ib42x0.ipk
-Size: 22868
-MD5Sum: 8365da68b9b8cf3bfe4e7c17897039be
+Size: 22875
+MD5Sum: 31508a2186ca270cbc6da76fa68cea78
 Description:  Kernel modules for PPP support
 
 Package: kmod-pppoa
@@ -3538,10 +3581,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 3097
+Installed-Size: 3096
 Filename: kmod-pppoa_3.8-1_ib42x0.ipk
-Size: 3764
-MD5Sum: c1c6baeef4e91a06ce831cb037f7605b
+Size: 3766
+MD5Sum: ac34e6123a002d2b693484b1457a159a
 Description:  Kernel modules for PPPoA (PPP over ATM) support
 
 Package: kmod-pppoe
@@ -3552,10 +3595,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 6911
+Installed-Size: 6913
 Filename: kmod-pppoe_3.8-1_ib42x0.ipk
-Size: 7606
-MD5Sum: a13fdb81fd38df1caa429504c3243da4
+Size: 7616
+MD5Sum: 16324d5a73d4664f81696ff636eaf235
 Description:  Kernel module for PPPoE (PPP over Ethernet) support
 
 Package: kmod-pppox
@@ -3568,8 +3611,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 1978
 Filename: kmod-pppox_3.8-1_ib42x0.ipk
-Size: 2678
-MD5Sum: 68846bf5e31d02f905ec85da6d50842c
+Size: 2681
+MD5Sum: ce457979f89a71415731a80afb9412a9
 Description:  Kernel helper module for PPPoE and PPTP support
 
 Package: kmod-pptp
@@ -3580,10 +3623,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 5143
+Installed-Size: 5138
 Filename: kmod-pptp_3.8-1_ib42x0.ipk
 Size: 5789
-MD5Sum: cd6de9c48bf9a265c79d3f5bfd42b0e0
+MD5Sum: e7a8a59ffd90481f49155e2a91fb6aad
 Description:  PPtP support
 
 Package: kmod-rt2500-usb
@@ -3595,10 +3638,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 10449
+Installed-Size: 10454
 Filename: kmod-rt2500-usb_3.8+2013-02-22-1_ib42x0.ipk
-Size: 11143
-MD5Sum: 7fdbeac62c63480907c9dbc0436bcd29
+Size: 11145
+MD5Sum: 61e7e5b34499be81e5f5d9bec42db172
 Description:  Ralink Drivers for RT2x00 cards (RT2500 USB)
 
 Package: kmod-rt2x00-lib
@@ -3610,10 +3653,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 21037
+Installed-Size: 21039
 Filename: kmod-rt2x00-lib_3.8+2013-02-22-1_ib42x0.ipk
-Size: 21796
-MD5Sum: d55bb40f8ab456fa60e95c8c6af9e9f6
+Size: 21781
+MD5Sum: 0aa4dbdf2d86aa8e3f3417bf1fc28061
 Description:  Ralink Drivers for RT2x00 cards (LIB)
 
 Package: kmod-rt2x00-usb
@@ -3625,10 +3668,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 6059
+Installed-Size: 6061
 Filename: kmod-rt2x00-usb_3.8+2013-02-22-1_ib42x0.ipk
-Size: 6819
-MD5Sum: baf9fef3f6bfcfeb5a84cdce3cd71273
+Size: 6823
+MD5Sum: 68d6ec63c90d4bb0a6f125d723c27bc5
 Description:  Ralink Drivers for RT2x00 cards (USB)
 
 Package: kmod-rt73-usb
@@ -3640,10 +3683,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 14830
+Installed-Size: 14831
 Filename: kmod-rt73-usb_3.8+2013-02-22-1_ib42x0.ipk
-Size: 15445
-MD5Sum: 55c75c95ee8b4b972e7a7af3fa903ce4
+Size: 15432
+MD5Sum: 1e9d8b8fcd34b7e4671bfa612c07e063
 Description:  Ralink Drivers for RT2x00 cards (RT73 USB)
 
 Package: kmod-rtc-gemini
@@ -3654,10 +3697,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 1978
+Installed-Size: 1979
 Filename: kmod-rtc-gemini_3.8-1_ib42x0.ipk
-Size: 2667
-MD5Sum: d5ba465c1eb25217dae6efde61a640f5
+Size: 2657
+MD5Sum: e68f5df3eb995b0fe54c3df7a0f5d1e1
 Description:  Gemini RTC driver
 
 Package: kmod-rtl8187
@@ -3669,10 +3712,10 @@ SourceURL: http://mirror2.openwrt.org/sources
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
-Installed-Size: 22664
+Installed-Size: 22665
 Filename: kmod-rtl8187_3.8+2013-02-22-1_ib42x0.ipk
-Size: 23364
-MD5Sum: e7fca766506cea5983b5feefb3a08335
+Size: 23373
+MD5Sum: 0bbf48c19a95f1a4dab2d5744d3bd64d
 Description:  Realtek Drivers for RTL818x devices (RTL8187 USB)
 
 Package: kmod-scst-vdisk
@@ -3685,8 +3728,8 @@ Section: kernel
 Architecture: ib42x0
 Installed-Size: 20458
 Filename: kmod-scst-vdisk_3.8+2.2.x-4767-1_ib42x0.ipk
-Size: 21108
-MD5Sum: 42251aa88578957f5c0f64a0f8300520
+Size: 21104
+MD5Sum: a05a5290802ddd11a07524a50139b0ed
 Description:  SCST vdisk support
 
 Package: kmod-scst
@@ -3699,8 +3742,8 @@ Section: kernel
 Architecture: ib42x0
 Installed-Size: 98331
 Filename: kmod-scst_3.8+2.2.x-4767-1_ib42x0.ipk
-Size: 98783
-MD5Sum: 1aad48d73f91f15e6d2e99a3c7ad3584
+Size: 98765
+MD5Sum: 4d7760c4ff2e1ced0111d7ff9f090703
 Description:  SCST kernel module
 
 Package: kmod-sit
@@ -3711,10 +3754,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 9784
+Installed-Size: 9785
 Filename: kmod-sit_3.8-1_ib42x0.ipk
-Size: 10484
-MD5Sum: 2f296f19eeaa24d8fc1fbb751b4475ea
+Size: 10480
+MD5Sum: 64b0f949ed7a49787be1af6eac554b2d
 Description:  Kernel modules for IPv6-in-IPv4 tunnelling
 
 Package: kmod-sound-core
@@ -3725,10 +3768,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 120139
+Installed-Size: 120145
 Filename: kmod-sound-core_3.8-1_ib42x0.ipk
-Size: 120854
-MD5Sum: fb00bd4bd7eff3e0994ca591d63105d5
+Size: 120886
+MD5Sum: 12106e3d089927fbb3173768b91e3c83
 Description:  Kernel modules for sound support
 
 Package: kmod-tun
@@ -3739,10 +3782,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 11622
+Installed-Size: 11620
 Filename: kmod-tun_3.8-1_ib42x0.ipk
-Size: 12343
-MD5Sum: 5cf9c0d855f0a696b793c77576464635
+Size: 12334
+MD5Sum: 7b07ec6f1eb0936df19ba091f8163940
 Description:  Kernel support for the TUN/TAP tunneling device
 
 Package: kmod-usb-core
@@ -3753,10 +3796,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 105
+Installed-Size: 106
 Filename: kmod-usb-core_3.8-1_ib42x0.ipk
-Size: 653
-MD5Sum: 23de9677fc1d75ca9165fd41bc2f93a8
+Size: 656
+MD5Sum: 076bd9c10f1248c0ce37a86e334a5aad
 Description:  Kernel support for USB
 
 Package: kmod-usb-hid
@@ -3767,10 +3810,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 15989
+Installed-Size: 15991
 Filename: kmod-usb-hid_3.8-1_ib42x0.ipk
-Size: 16690
-MD5Sum: c499e80a7c0cacacfd4f8e3129bcad05
+Size: 16685
+MD5Sum: fd564f27dd586c67460db580df9746af
 Description:  Kernel support for USB HID devices such as keyboards and mice
 
 Package: kmod-usb-serial-ark3116
@@ -3781,10 +3824,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4783
+Installed-Size: 4780
 Filename: kmod-usb-serial-ark3116_3.8-1_ib42x0.ipk
-Size: 5486
-MD5Sum: d877c04e8ab270bb2c08b5268ea9de4f
+Size: 5476
+MD5Sum: 5fafad52bde80ab40d3750bb960baacc
 Description:  Kernel support for ArkMicroChips ARK3116 USB-to-Serial converters
 
 Package: kmod-usb-serial-belkin
@@ -3795,10 +3838,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 3742
+Installed-Size: 3748
 Filename: kmod-usb-serial-belkin_3.8-1_ib42x0.ipk
-Size: 4425
-MD5Sum: 7077ca368223b8246a002b385014aaae
+Size: 4432
+MD5Sum: 617b47e4ca38e9fbe74905a6477044bb
 Description:  Kernel support for Belkin USB-to-Serial converters
 
 Package: kmod-usb-serial-ch341
@@ -3809,10 +3852,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 3780
+Installed-Size: 3784
 Filename: kmod-usb-serial-ch341_3.8-1_ib42x0.ipk
-Size: 4475
-MD5Sum: 20bce5eb6fb4c777958fe1f27077a1d9
+Size: 4476
+MD5Sum: 82cbb63c39ced7a649324c7359532b7c
 Description:  Kernel support for Winchiphead CH341 USB-to-Serial converters
 
 Package: kmod-usb-serial-cp210x
@@ -3823,10 +3866,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 5616
+Installed-Size: 5615
 Filename: kmod-usb-serial-cp210x_3.8-1_ib42x0.ipk
-Size: 6165
-MD5Sum: 63d5c9f3744caf26454f2bf7e52fe689
+Size: 6144
+MD5Sum: 1b102cecb40431598aef3374bb3b11c3
 Description:  Kernel support for Silicon Labs cp210x USB-to-Serial converters
 
 Package: kmod-usb-serial-cypress-m8
@@ -3837,10 +3880,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 6620
+Installed-Size: 6622
 Filename: kmod-usb-serial-cypress-m8_3.8-1_ib42x0.ipk
-Size: 7433
-MD5Sum: 05d3f720f6f71b454c6096dadd4b679c
+Size: 7430
+MD5Sum: 0494af16ea4a26fce047ccd41ece9ab9
 Description:  Kernel support for devices with Cypress M8 USB to Serial chip
  (for example, the Delorme Earthmate LT-20 GPS)
  Supported microcontrollers in the CY4601 family are:
@@ -3854,10 +3897,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 19246
+Installed-Size: 19248
 Filename: kmod-usb-serial-ftdi_3.8-1_ib42x0.ipk
-Size: 18168
-MD5Sum: 5cbd83ffb7864c513fd2820db70a323a
+Size: 18163
+MD5Sum: 6b24c79e42445e830e288caade2287f9
 Description:  Kernel support for FTDI USB-to-Serial converters
 
 Package: kmod-usb-serial-ipw
@@ -3868,10 +3911,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 2257
+Installed-Size: 2261
 Filename: kmod-usb-serial-ipw_3.8-1_ib42x0.ipk
-Size: 2920
-MD5Sum: 4fdc8dc4ad310cc7b04777e24880ff01
+Size: 2925
+MD5Sum: dd8e883ae644e366139c30d9bac846a4
 Description:  Support for IPWireless 3G devices
 
 Package: kmod-usb-serial-keyspan
@@ -3882,10 +3925,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 9607
+Installed-Size: 9611
 Filename: kmod-usb-serial-keyspan_3.8-1_ib42x0.ipk
-Size: 10290
-MD5Sum: b9104177b1ff7ec102a820113a7ebc01
+Size: 10283
+MD5Sum: c1041233f2e114d0d113871d3acfc033
 Description:  Kernel support for Keyspan USB-to-Serial devices
 
 Package: kmod-usb-serial-mct
@@ -3896,10 +3939,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4791
+Installed-Size: 4793
 Filename: kmod-usb-serial-mct_3.8-1_ib42x0.ipk
-Size: 5482
-MD5Sum: d0601d7c65a68ca992a559fced47af01
+Size: 5490
+MD5Sum: b8950d19e0da7f520130ec74cefaa1d5
 Description:  Kernel support for Magic Control Technology USB-to-Serial converters
 
 Package: kmod-usb-serial-mos7720
@@ -3910,10 +3953,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 6080
+Installed-Size: 6081
 Filename: kmod-usb-serial-mos7720_3.8-1_ib42x0.ipk
 Size: 6794
-MD5Sum: db1e4ed72078001cfe359c553aa5f330
+MD5Sum: e4be6694173fc98a293196f8bdfe0e82
 Description:  Kernel support for Moschip MOS7720 USB-to-Serial converters
 
 Package: kmod-usb-serial-motorola-phone
@@ -3924,10 +3967,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 1292
+Installed-Size: 1294
 Filename: kmod-usb-serial-motorola-phone_3.8-1_ib42x0.ipk
-Size: 1997
-MD5Sum: 272b804f8f3d30603074c206838a7e59
+Size: 2003
+MD5Sum: 1cfb375e74ebb586a50ca0014e0fc0cd
 Description:  Kernel support for Motorola usb phone
 
 Package: kmod-usb-serial-option
@@ -3938,10 +3981,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 13188
+Installed-Size: 13191
 Filename: kmod-usb-serial-option_3.8-1_ib42x0.ipk
-Size: 11875
-MD5Sum: 0274a983e9303d8264d9f79ef885b021
+Size: 11864
+MD5Sum: 3f840cd98b8890d7563bf6a51f352ffb
 Description:  Kernel support for Option HSDPA modems
 
 Package: kmod-usb-serial-oti6858
@@ -3952,10 +3995,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 5054
+Installed-Size: 5057
 Filename: kmod-usb-serial-oti6858_3.8-1_ib42x0.ipk
-Size: 5757
-MD5Sum: 167d345cc9e845700ed5683afcef5acb
+Size: 5762
+MD5Sum: df4417593465f72bed81ed712b0b58ac
 Description:  Kernel support for Ours Technology OTI6858 USB-to-Serial converters
 
 Package: kmod-usb-serial-pl2303
@@ -3966,10 +4009,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 5997
+Installed-Size: 6003
 Filename: kmod-usb-serial-pl2303_3.8-1_ib42x0.ipk
-Size: 6604
-MD5Sum: 5ac3ac45de3f5a01b04209c32738bac1
+Size: 6616
+MD5Sum: da73a0e9394739b78f4e03167cd0bb2e
 Description:  Kernel support for Prolific PL2303 USB-to-Serial converters
 
 Package: kmod-usb-serial-sierrawireless
@@ -3980,10 +4023,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 5902
+Installed-Size: 5906
 Filename: kmod-usb-serial-sierrawireless_3.8-1_ib42x0.ipk
-Size: 6562
-MD5Sum: 5428a15032e35fcdfe3cba2db1f37485
+Size: 6575
+MD5Sum: 5ca908aa8110ed5240c181291353355d
 Description:  Kernel support for Sierra Wireless devices
 
 Package: kmod-usb-serial-ti-usb
@@ -3994,10 +4037,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 9825
+Installed-Size: 9829
 Filename: kmod-usb-serial-ti-usb_3.8-1_ib42x0.ipk
-Size: 10553
-MD5Sum: 9df266da078e75636328f162091d165e
+Size: 10563
+MD5Sum: 4f358a001e4a6966b40bbd017616a0d5
 Description:  Kernel support for TI USB 3410/5052 devices
 
 Package: kmod-usb-serial-visor
@@ -4008,10 +4051,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4405
+Installed-Size: 4404
 Filename: kmod-usb-serial-visor_3.8-1_ib42x0.ipk
-Size: 5079
-MD5Sum: 0020ce691fcb49844abf854eb2a910b3
+Size: 5084
+MD5Sum: 95014d4f7213254f860cf76ac3e27374
 Description:  Kernel support for Handspring Visor PDAs
 
 Package: kmod-usb-serial-wwan
@@ -4022,10 +4065,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4056
+Installed-Size: 4057
 Filename: kmod-usb-serial-wwan_3.8-1_ib42x0.ipk
-Size: 4737
-MD5Sum: 2eecd574d36dc240bb7d69a0c810cd2f
+Size: 4742
+MD5Sum: 5a8310a37e87cab415ecade750995cb8
 Description:  Kernel support for USB GSM and CDMA modems
 
 Package: kmod-usb-serial
@@ -4036,10 +4079,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 103
+Installed-Size: 106
 Filename: kmod-usb-serial_3.8-1_ib42x0.ipk
-Size: 664
-MD5Sum: c1dc23ad9b768d045d122d21249c2f71
+Size: 671
+MD5Sum: 0066b4f1d38073abab9924e9a801fdc4
 Description:  Kernel support for USB-to-Serial converters
 
 Package: kmod-usbip-client
@@ -4050,10 +4093,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 8471
+Installed-Size: 8472
 Filename: kmod-usbip-client_3.8-1_ib42x0.ipk
-Size: 9173
-MD5Sum: 9579362e4a409870a52d48f00449bb5e
+Size: 9178
+MD5Sum: b09e7f1917f7297c30b78f06d84e7c12
 Description:  USB-over-IP client driver
 
 Package: kmod-usbip-server
@@ -4064,10 +4107,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 8473
+Installed-Size: 8476
 Filename: kmod-usbip-server_3.8-1_ib42x0.ipk
-Size: 9169
-MD5Sum: b7126e47cd51a22415bb77aa58562bc3
+Size: 9172
+MD5Sum: a5ae9eff758960a65b468c8f4505a42a
 Description:  USB-over-IP host driver
 
 Package: kmod-usbip
@@ -4078,10 +4121,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 5137
+Installed-Size: 5134
 Filename: kmod-usbip_3.8-1_ib42x0.ipk
-Size: 5815
-MD5Sum: 17d7b06fdb2539b8f4937d54c9664170
+Size: 5810
+MD5Sum: b1fca6017b11fe5e56a49d2564f77995
 Description:  USB-over-IP kernel support
 
 Package: kmod-video-core
@@ -4092,10 +4135,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 48217
+Installed-Size: 48216
 Filename: kmod-video-core_3.8-1_ib42x0.ipk
-Size: 48697
-MD5Sum: fae70622da7b6b2b89745a57c3534f45
+Size: 48681
+MD5Sum: 07d59242b3924afce738325a2e336299
 Description:  Kernel modules for Video4Linux support
 
 Package: kmod-video-cpia2
@@ -4106,10 +4149,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 17952
+Installed-Size: 17956
 Filename: kmod-video-cpia2_3.8-1_ib42x0.ipk
-Size: 18643
-MD5Sum: 6626ad04a7e6f8fd17be0f3ecf20341c
+Size: 18664
+MD5Sum: 0514593ef59c1b6f3ba8ed3f3c089af1
 Description:  Kernel modules for supporting CPIA2 USB based cameras.
 
 Package: kmod-video-gspca-conex
@@ -4120,10 +4163,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 5679
+Installed-Size: 5681
 Filename: kmod-video-gspca-conex_3.8-1_ib42x0.ipk
-Size: 6389
-MD5Sum: 67e3a2f5876e31cb496d458e8bafb2e9
+Size: 6384
+MD5Sum: 0b24b25eaa38d5c71e0323e5d476d80c
 Description:  The Conexant Camera Driver (conex) kernel module.
 
 Package: kmod-video-gspca-core
@@ -4136,8 +4179,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 11606
 Filename: kmod-video-gspca-core_3.8-1_ib42x0.ipk
-Size: 12406
-MD5Sum: f6bbb05cf87c3bec979e21856e6cf447
+Size: 12404
+MD5Sum: 1d40f128acab24be5f698ff7ff035d75
 Description:  Kernel modules for supporting GSPCA based webcam devices. Note this is just
  the core of the driver, please select a submodule that supports your webcam.
 
@@ -4149,10 +4192,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4223
+Installed-Size: 4224
 Filename: kmod-video-gspca-etoms_3.8-1_ib42x0.ipk
-Size: 4907
-MD5Sum: 031851c9e3c650ae5664b75e969a9df2
+Size: 4897
+MD5Sum: 910d48eaf9531ce2c82d481be1fc8ba3
 Description:  The Etoms USB Camera Driver (etoms) kernel module.
 
 Package: kmod-video-gspca-finepix
@@ -4163,10 +4206,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 2750
+Installed-Size: 2754
 Filename: kmod-video-gspca-finepix_3.8-1_ib42x0.ipk
-Size: 3448
-MD5Sum: 6ecf464de59539c5e83b84a34eebc49d
+Size: 3443
+MD5Sum: 6e0f90176216d6a54fd9948d0e836251
 Description:  The Fujifilm FinePix USB V4L2 driver (finepix) kernel module.
 
 Package: kmod-video-gspca-gl860
@@ -4177,10 +4220,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 16503
+Installed-Size: 16499
 Filename: kmod-video-gspca-gl860_3.8-1_ib42x0.ipk
-Size: 17178
-MD5Sum: 104c0fc0c2113b3bc749bc8263aeccc6
+Size: 17150
+MD5Sum: cca841eae4efef40ab2a4810fdcac69d
 Description:  gl860 webcam support
 
 Package: kmod-video-gspca-jeilinj
@@ -4191,10 +4234,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4289
+Installed-Size: 4288
 Filename: kmod-video-gspca-jeilinj_3.8-1_ib42x0.ipk
-Size: 4984
-MD5Sum: 08565e369d1948091d912b80a10439f5
+Size: 4987
+MD5Sum: d883768c56f924c56ceb2fb26b0839b6
 Description:  The JEILINJ USB Camera Driver (jeilinj) kernel module.
 
 Package: kmod-video-gspca-konica
@@ -4205,10 +4248,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 3359
+Installed-Size: 3357
 Filename: kmod-video-gspca-konica_3.8-1_ib42x0.ipk
-Size: 4044
-MD5Sum: 1b712917c3fdf7503becb94c64c83179
+Size: 4042
+MD5Sum: 4331a00e1d632176d247d9bc65663676
 Description:  The Konica USB Camera Driver (konica) kernel module.
 
 Package: kmod-video-gspca-m5602
@@ -4219,10 +4262,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 14169
+Installed-Size: 14170
 Filename: kmod-video-gspca-m5602_3.8-1_ib42x0.ipk
-Size: 14881
-MD5Sum: 53b7b0d35074014bb3ba75991d25f02e
+Size: 14877
+MD5Sum: cf4da3382f6a89bd73a9be405c1e6756
 Description:  The ALi USB m5602 Camera Driver (m5602) kernel module.
 
 Package: kmod-video-gspca-mars
@@ -4233,10 +4276,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 3752
+Installed-Size: 3754
 Filename: kmod-video-gspca-mars_3.8-1_ib42x0.ipk
-Size: 4438
-MD5Sum: dd917f9241e7b24c88b81f688d7eb5e5
+Size: 4440
+MD5Sum: f6d5440f40af1c341ac4991740df76b2
 Description:  The Mars USB Camera Driver (mars) kernel module.
 
 Package: kmod-video-gspca-mr97310a
@@ -4247,10 +4290,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 5418
+Installed-Size: 5417
 Filename: kmod-video-gspca-mr97310a_3.8-1_ib42x0.ipk
-Size: 6139
-MD5Sum: 901a7f8e9db511711b2f2380b36f3aec
+Size: 6141
+MD5Sum: 9bb2ccaed716e92267a7985579ecd681
 Description:  The Mars-Semi MR97310A USB Camera Driver (mr97310a) kernel module.
 
 Package: kmod-video-gspca-ov519
@@ -4261,10 +4304,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 17091
+Installed-Size: 17094
 Filename: kmod-video-gspca-ov519_3.8-1_ib42x0.ipk
-Size: 17814
-MD5Sum: e1d4719469672a117ceeb25ead3134d6
+Size: 17817
+MD5Sum: c51b2c5f5c9ba8905fe27623d43c22e1
 Description:  The OV519 USB Camera Driver (ov519) kernel module.
 
 Package: kmod-video-gspca-ov534-9
@@ -4275,10 +4318,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 5625
+Installed-Size: 5628
 Filename: kmod-video-gspca-ov534-9_3.8-1_ib42x0.ipk
-Size: 6335
-MD5Sum: fe51bb6ddbd6a543ea5cfcd8ad20f59a
+Size: 6333
+MD5Sum: f52c22a9e69aff4bb8b4bf274eb84133
 Description:  The OV534-9 USB Camera Driver (ov534_9) kernel module.
 
 Package: kmod-video-gspca-ov534
@@ -4289,10 +4332,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 6745
+Installed-Size: 6749
 Filename: kmod-video-gspca-ov534_3.8-1_ib42x0.ipk
-Size: 7486
-MD5Sum: d8956e51e1d0ad480a7dca0f092564be
+Size: 7496
+MD5Sum: fee68e8e6c34297a3f81dab1fa700ff4
 Description:  The OV534 USB Camera Driver (ov534) kernel module.
 
 Package: kmod-video-gspca-pac207
@@ -4303,10 +4346,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 3694
+Installed-Size: 3695
 Filename: kmod-video-gspca-pac207_3.8-1_ib42x0.ipk
-Size: 4391
-MD5Sum: c47c09a8ad455c9117402377c58c677a
+Size: 4390
+MD5Sum: 302c4acf8db3425cda6bd4666a3abcef
 Description:  The Pixart PAC207 USB Camera Driver (pac207) kernel module.
 
 Package: kmod-video-gspca-pac7311
@@ -4317,10 +4360,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4305
+Installed-Size: 4308
 Filename: kmod-video-gspca-pac7311_3.8-1_ib42x0.ipk
-Size: 5009
-MD5Sum: a2fc7b4177d0df9e96adcce905a0007f
+Size: 5017
+MD5Sum: 3249521dd75ab903ad4219607096f168
 Description:  The Pixart PAC7311 USB Camera Driver (pac7311) kernel module.
 
 Package: kmod-video-gspca-se401
@@ -4331,10 +4374,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4629
+Installed-Size: 4632
 Filename: kmod-video-gspca-se401_3.8-1_ib42x0.ipk
-Size: 5312
-MD5Sum: 6a7fe7a1a343e72a01bfade7894bec75
+Size: 5315
+MD5Sum: f933432c9a50247e7b5918a306cf59b6
 Description:  The SE401 USB Camera Driver kernel module.
 
 Package: kmod-video-gspca-sn9c20x
@@ -4345,10 +4388,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 13614
+Installed-Size: 13612
 Filename: kmod-video-gspca-sn9c20x_3.8-1_ib42x0.ipk
-Size: 14288
-MD5Sum: e3f265fea06e3c72cd75080971bf9578
+Size: 14268
+MD5Sum: 23bc312c1604366dd8ae06c6886aafac
 Description:  The SN9C20X USB Camera Driver (sn9c20x) kernel module.
 
 Package: kmod-video-gspca-sonixb
@@ -4359,10 +4402,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 7061
+Installed-Size: 7065
 Filename: kmod-video-gspca-sonixb_3.8-1_ib42x0.ipk
-Size: 7769
-MD5Sum: aecbbdeb856a8af014059c629b209004
+Size: 7780
+MD5Sum: fca2bc47b448dc6ede8faf3342c0f522
 Description:  The SONIX Bayer USB Camera Driver (sonixb) kernel module.
 
 Package: kmod-video-gspca-sonixj
@@ -4373,10 +4416,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 13413
+Installed-Size: 13412
 Filename: kmod-video-gspca-sonixj_3.8-1_ib42x0.ipk
-Size: 14026
-MD5Sum: dd00ba79a7fa5d0537043e717d2ce80b
+Size: 14080
+MD5Sum: 3749be54cf6e51a8e50da75d1e9a887b
 Description:  The SONIX JPEG USB Camera Driver (sonixj) kernel module.
 
 Package: kmod-video-gspca-spca500
@@ -4390,7 +4433,7 @@ Architecture: ib42x0
 Installed-Size: 5628
 Filename: kmod-video-gspca-spca500_3.8-1_ib42x0.ipk
 Size: 6338
-MD5Sum: 029e2d153b5f41e1c6bc9c0757cb4ab9
+MD5Sum: fe00f78a29874f816d127f2bb2460dbd
 Description:  The SPCA500 USB Camera Driver (spca500) kernel module.
 
 Package: kmod-video-gspca-spca501
@@ -4401,10 +4444,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4516
+Installed-Size: 4515
 Filename: kmod-video-gspca-spca501_3.8-1_ib42x0.ipk
-Size: 5170
-MD5Sum: 45b606adc2e609713293f23fba85446e
+Size: 5166
+MD5Sum: be33ecba553f6bca55cf41c48ff33018
 Description:  The SPCA501 USB Camera Driver (spca501) kernel module.
 
 Package: kmod-video-gspca-spca505
@@ -4415,10 +4458,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 3385
+Installed-Size: 3389
 Filename: kmod-video-gspca-spca505_3.8-1_ib42x0.ipk
-Size: 4071
-MD5Sum: 8df94b9b92e55a4de458d6108130e89c
+Size: 4082
+MD5Sum: 76e5569ed3169da2691a36a64b02c305
 Description:  The SPCA505 USB Camera Driver (spca505) kernel module.
 
 Package: kmod-video-gspca-spca506
@@ -4429,10 +4472,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 3847
+Installed-Size: 3849
 Filename: kmod-video-gspca-spca506_3.8-1_ib42x0.ipk
-Size: 4515
-MD5Sum: 12d64e472861e6bca495aa1c905bc62b
+Size: 4528
+MD5Sum: df097ca071d02530dda42e776363e65b
 Description:  The SPCA506 USB Camera Driver (spca506) kernel module.
 
 Package: kmod-video-gspca-spca508
@@ -4443,10 +4486,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 4028
+Installed-Size: 4026
 Filename: kmod-video-gspca-spca508_3.8-1_ib42x0.ipk
-Size: 4723
-MD5Sum: 6190ccce812ee2b28c19d3bcf998e125
+Size: 4721
+MD5Sum: a028990f31dcd880d27691c594d12a93
 Description:  The SPCA508 USB Camera Driver (spca508) kernel module.
 
 Package: kmod-video-gspca-spca561
@@ -4459,8 +4502,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 5318
 Filename: kmod-video-gspca-spca561_3.8-1_ib42x0.ipk
-Size: 6033
-MD5Sum: e7c58f474d17b313b7927b822be7e4a9
+Size: 6037
+MD5Sum: fe95cbd3e5dc326032ec0f465ede95c2
 Description:  The SPCA561 USB Camera Driver (spca561) kernel module.
 
 Package: kmod-video-gspca-sq905
@@ -4471,10 +4514,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 2983
+Installed-Size: 2988
 Filename: kmod-video-gspca-sq905_3.8-1_ib42x0.ipk
-Size: 3682
-MD5Sum: 978681f058cc4147b4caccacc62e8424
+Size: 3686
+MD5Sum: ecda0a9f89227b790b1bc97fd7e3522a
 Description:  The SQ Technologies SQ905 based USB Camera Driver (sq905) kernel module.
 
 Package: kmod-video-gspca-sq905c
@@ -4487,8 +4530,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 2658
 Filename: kmod-video-gspca-sq905c_3.8-1_ib42x0.ipk
-Size: 3365
-MD5Sum: d6d9b1111a6d693b9421e95cfe017995
+Size: 3369
+MD5Sum: ded657c5ce4f231cb567d81cc65b9e8d
 Description:  The SQ Technologies SQ905C based USB Camera Driver (sq905c) kernel module.
 
 Package: kmod-video-gspca-stk014
@@ -4499,10 +4542,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 3956
+Installed-Size: 3949
 Filename: kmod-video-gspca-stk014_3.8-1_ib42x0.ipk
-Size: 4662
-MD5Sum: 78336ed41b64b0168a2029563cb604d1
+Size: 4655
+MD5Sum: 9774437b1c56d72da76e5821e0b18f40
 Description:  The Syntek DV4000 (STK014) USB Camera Driver (stk014) kernel module.
 
 Package: kmod-video-gspca-stv06xx
@@ -4513,10 +4556,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 9199
+Installed-Size: 9197
 Filename: kmod-video-gspca-stv06xx_3.8-1_ib42x0.ipk
-Size: 9919
-MD5Sum: ac63d7bc669e79572fa146f14071bd32
+Size: 9906
+MD5Sum: 3c11072ede46b94e11265c328d634b93
 Description:  The STV06XX USB Camera Driver (stv06xx) kernel module.
 
 Package: kmod-video-gspca-sunplus
@@ -4529,8 +4572,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 6378
 Filename: kmod-video-gspca-sunplus_3.8-1_ib42x0.ipk
-Size: 6992
-MD5Sum: 568d963c12717c916eedf2a126363c64
+Size: 6990
+MD5Sum: ee62c7bbb0b175b9d8bd756354c6355c
 Description:  The SUNPLUS USB Camera Driver (sunplus) kernel module.
 
 Package: kmod-video-gspca-t613
@@ -4543,8 +4586,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 6037
 Filename: kmod-video-gspca-t613_3.8-1_ib42x0.ipk
-Size: 6748
-MD5Sum: da5910619aa2e69f2e03363658d55a55
+Size: 6747
+MD5Sum: 60996c4fb56981585f837f7f21b735b1
 Description:  The T613 (JPEG Compliance) USB Camera Driver (t613) kernel module.
 
 Package: kmod-video-gspca-tv8532
@@ -4557,8 +4600,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 2749
 Filename: kmod-video-gspca-tv8532_3.8-1_ib42x0.ipk
-Size: 3445
-MD5Sum: 151d86067471cd3b6b49c7a40bfed363
+Size: 3442
+MD5Sum: 0a7bc2b8baf512fea91a307504d7cc37
 Description:  The TV8532 USB Camera Driver (tv8532) kernel module.
 
 Package: kmod-video-gspca-vc032x
@@ -4571,8 +4614,8 @@ Status: unknown hold not-installed
 Architecture: ib42x0
 Installed-Size: 10746
 Filename: kmod-video-gspca-vc032x_3.8-1_ib42x0.ipk
-Size: 11439
-MD5Sum: 5876494f5d45ef04f66c2b949dbdf2e4
+Size: 11430
+MD5Sum: 26d52c7242debd2e7afc88aaaa5e1712
 Description:  The VC032X USB Camera Driver (vc032x) kernel module.
 
 Package: kmod-video-gspca-zc3xx
@@ -4583,10 +4626,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 16267
+Installed-Size: 16269
 Filename: kmod-video-gspca-zc3xx_3.8-1_ib42x0.ipk
-Size: 16865
-MD5Sum: 71820b75c977f4ffa1bb85f9bd01f7b6
+Size: 16869
+MD5Sum: 4e08c81bc81f57c5d0ba786aceef5edd
 Description:  The ZC3XX USB Camera Driver (zc3xx) kernel module.
 
 Package: kmod-video-pwc
@@ -4597,10 +4640,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 22106
+Installed-Size: 22105
 Filename: kmod-video-pwc_3.8-1_ib42x0.ipk
-Size: 22804
-MD5Sum: 3bed784100f5de172f0c9b20327766c0
+Size: 22797
+MD5Sum: 00407d511e204374303919da7e6446f1
 Description:  Kernel modules for supporting Philips USB based cameras.
 
 Package: kmod-video-sn9c102
@@ -4611,10 +4654,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 31699
+Installed-Size: 31704
 Filename: kmod-video-sn9c102_3.8-1_ib42x0.ipk
-Size: 32107
-MD5Sum: 4f0e5ff48da02972865b636cdcd219ac
+Size: 32117
+MD5Sum: f923a28c22a35184aaa083c2cf0c1a34
 Description:  Kernel modules for supporting SN9C102
  camera chips.
 
@@ -4626,10 +4669,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 36304
+Installed-Size: 36305
 Filename: kmod-video-uvc_3.8-1_ib42x0.ipk
-Size: 37050
-MD5Sum: 7811815ab626e21214e3100fcb6bcf85
+Size: 37047
+MD5Sum: ee285607db95d791ee100fff58fe2d3a
 Description:  Kernel modules for supporting USB Video Class (UVC) devices.
 
 Package: kmod-video-videobuf2
@@ -4640,10 +4683,10 @@ License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ib42x0
-Installed-Size: 16131
+Installed-Size: 16126
 Filename: kmod-video-videobuf2_3.8-1_ib42x0.ipk
 Size: 16815
-MD5Sum: 0b36d9ba1bc12fe8599d24e2f399f26e
+MD5Sum: 1a0e72cd7fffe5bfd6b95cdfbd3e22b6
 Description:  Kernel modules that implements three basic types of media buffers.
 
 Package: kmod-zd1211rw
@@ -4657,8 +4700,8 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ib42x0
 Installed-Size: 40128
 Filename: kmod-zd1211rw_3.8+2013-02-22-1_ib42x0.ipk
-Size: 40816
-MD5Sum: 2db6b17d64f8121e85cf22d76dae9ba9
+Size: 40821
+MD5Sum: dc3be2ee6ef898ef5b35f8f0686f060b
 Description:  Zydas ZD1211 support
 
 Package: krb5-client
@@ -6397,6 +6440,20 @@ Size: 26237
 MD5Sum: 8d444d5988b240bad776ae9abebcd002
 Description:  This is a library for Abstract Syntax Notation One (ASN.1) and 
  Distinguish Encoding Rules (DER) manipulation.
+
+Package: libthread-db
+Version: 2.17-1
+Source: package/toolchain
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: ib42x0
+Installed-Size: 178
+Filename: libthread-db_2.17-1_ib42x0.ipk
+Size: 748
+MD5Sum: 0c6921346b65a9c7feba2a8074096b76
+Description:  POSIX thread library debugging support
 
 Package: libtiff
 Version: 4.0.3-1
@@ -9458,10 +9515,10 @@ SourceFile: openswan-2.6.38.tar.gz
 SourceURL: http://www.openswan.org/download
 Section: net
 Architecture: ib42x0
-Installed-Size: 725788
+Installed-Size: 725769
 Filename: openswan_2.6.38-2_ib42x0.ipk
-Size: 724722
-MD5Sum: 03d524c53fad82b5ce12d4b5dfac35a2
+Size: 724682
+MD5Sum: b82fd43263c017995faebcb8777f543f
 Description:  Openswan is an IPsec implementation for Linux.
  This package contains the Openswan user-land daemon.
 
@@ -9604,10 +9661,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 925853
+Installed-Size: 925852
 Filename: php5-cgi_5.4.11-1_ib42x0.ipk
-Size: 925237
-MD5Sum: 85bb90bb92ec3cd2281285ceacec698a
+Size: 925206
+MD5Sum: 8848af0100bca1b86fa2c1b5a5d70db2
 Description:  PHP is a widely-used general-purpose scripting language that is especially
  suited for Web development and can be embedded into HTML.
  This package contains the CGI version of the PHP5 interpreter.
@@ -9621,10 +9678,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 931595
+Installed-Size: 931665
 Filename: php5-cli_5.4.11-1_ib42x0.ipk
-Size: 930748
-MD5Sum: ca1ded8e76cac16d87854e6206e85142
+Size: 930953
+MD5Sum: d6c785fdf2c82cdc620b653b77ba8ba6
 Description:  PHP is a widely-used general-purpose scripting language that is especially
  suited for Web development and can be embedded into HTML.
  This package contains the CLI version of the PHP5 interpreter.
@@ -9638,10 +9695,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 553
+Installed-Size: 554
 Filename: php5-fastcgi_5.4.11-1_ib42x0.ipk
-Size: 1241
-MD5Sum: 89ccc5b4e9342e4bb4222bb2fa4c4080
+Size: 1247
+MD5Sum: 7a058eceac9a43cd6bf6f798d6d890be
 Description:  As FastCGI support is now a core feature the php5-fastcgi package now depends
  on the php5-cgi package, containing just the startup script.
 
@@ -9654,10 +9711,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 9556
+Installed-Size: 9554
 Filename: php5-mod-calendar_5.4.11-1_ib42x0.ipk
-Size: 10178
-MD5Sum: 5e296c6a9528d898ac2dd629fd428ac2
+Size: 10186
+MD5Sum: 9802c2e2160d0e7c0ec33e7f503565ba
 Description:  Calendar shared module
 
 Package: php5-mod-ctype
@@ -9669,10 +9726,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 2906
+Installed-Size: 2905
 Filename: php5-mod-ctype_5.4.11-1_ib42x0.ipk
-Size: 3532
-MD5Sum: f0f162ab647f2234393ff52970d680fd
+Size: 3524
+MD5Sum: 10f8c32428926cecfff52e6863aadfe7
 Description:  Ctype shared module
 
 Package: php5-mod-curl
@@ -9686,8 +9743,8 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
 Installed-Size: 25148
 Filename: php5-mod-curl_5.4.11-1_ib42x0.ipk
-Size: 25660
-MD5Sum: 6f045047d6cc4c57ae0b12ac3d0c0051
+Size: 25658
+MD5Sum: 7faca75ef96658560ad26cdbfcfa2908
 Description:  cURL shared module
 
 Package: php5-mod-dom
@@ -9699,10 +9756,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 44969
+Installed-Size: 44967
 Filename: php5-mod-dom_5.4.11-1_ib42x0.ipk
-Size: 45410
-MD5Sum: b0d16180ba7534fb928649e80947f687
+Size: 45436
+MD5Sum: 03bbe04c5e7c774da3f73f45acd1a6c3
 Description:  DOM shared module
 
 Package: php5-mod-exif
@@ -9714,10 +9771,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 22395
+Installed-Size: 22396
 Filename: php5-mod-exif_5.4.11-1_ib42x0.ipk
-Size: 22740
-MD5Sum: 7fc161047c7ff2c9b85c94320d3a692d
+Size: 22762
+MD5Sum: 9e9b8b5963379c8f927fb412156e3e8a
 Description:  EXIF shared module
 
 Package: php5-mod-fileinfo
@@ -9731,8 +9788,8 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
 Installed-Size: 212700
 Filename: php5-mod-fileinfo_5.4.11-1_ib42x0.ipk
-Size: 210574
-MD5Sum: 3302e71b3e88f7103e5de31aa93f0b98
+Size: 210576
+MD5Sum: e7db615d1c95c43b99416f3efb755e03
 Description:  Fileinfo shared module
 
 Package: php5-mod-ftp
@@ -9746,8 +9803,8 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
 Installed-Size: 14551
 Filename: php5-mod-ftp_5.4.11-1_ib42x0.ipk
-Size: 15116
-MD5Sum: 594b4762fb26d0553302d8b75f442317
+Size: 15122
+MD5Sum: 71043d10f8f64e7eefecdcf86e1165ea
 Description:  FTP shared module
 
 Package: php5-mod-gd
@@ -9759,10 +9816,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 71558
+Installed-Size: 71560
 Filename: php5-mod-gd_5.4.11-1_ib42x0.ipk
-Size: 72089
-MD5Sum: 1fafd6c83dee1b514ea637c47b81652e
+Size: 72107
+MD5Sum: ae34de553a17f9d187c8e0c64d73aa33
 Description:  GD graphics shared module
 
 Package: php5-mod-gettext
@@ -9774,10 +9831,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 2987
+Installed-Size: 2991
 Filename: php5-mod-gettext_5.4.11-1_ib42x0.ipk
-Size: 3608
-MD5Sum: 66642d36c9f602e205fbd25f58b0742a
+Size: 3610
+MD5Sum: d0f147e65f4d47bc4bb3724900e7b253
 Description:  Gettext shared module
 
 Package: php5-mod-gmp
@@ -9791,8 +9848,8 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
 Installed-Size: 10968
 Filename: php5-mod-gmp_5.4.11-1_ib42x0.ipk
-Size: 11590
-MD5Sum: c872f2b1c8071692958473656dacc58f
+Size: 11579
+MD5Sum: ce0f8b77b88c1400f89c04c2e8bf965a
 Description:  GMP shared module
 
 Package: php5-mod-hash
@@ -9804,10 +9861,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 74000
+Installed-Size: 74002
 Filename: php5-mod-hash_5.4.11-1_ib42x0.ipk
-Size: 73839
-MD5Sum: 839957a47be01ab21ab1061e27c8fd8f
+Size: 73835
+MD5Sum: fc6832c5b63fca065a7e65d48a2385a8
 Description:  Hash shared module
 
 Package: php5-mod-iconv
@@ -9821,8 +9878,8 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
 Installed-Size: 14849
 Filename: php5-mod-iconv_5.4.11-1_ib42x0.ipk
-Size: 15471
-MD5Sum: 31e482e46e27b832ea4637b326b539ff
+Size: 15476
+MD5Sum: 5d82fb00a8e81e4f75df63f4c665c0b1
 Description:  iConv shared module
 
 Package: php5-mod-json
@@ -9834,10 +9891,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 11805
+Installed-Size: 11806
 Filename: php5-mod-json_5.4.11-1_ib42x0.ipk
-Size: 12459
-MD5Sum: a20dc77c30df8a17ba4c0a57c45d0f2e
+Size: 12464
+MD5Sum: 11faa98b4b89d1118e9b87fe5864c76d
 Description:  JSON shared module
 
 Package: php5-mod-ldap
@@ -9851,8 +9908,8 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
 Installed-Size: 15645
 Filename: php5-mod-ldap_5.4.11-1_ib42x0.ipk
-Size: 16154
-MD5Sum: 4dc9913e1f3be9d14436fafd6571e6eb
+Size: 16158
+MD5Sum: b76b5d0e999f42297b2ba337fb909274
 Description:  LDAP shared module
 
 Package: php5-mod-mbstring
@@ -9864,10 +9921,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 578750
+Installed-Size: 578749
 Filename: php5-mod-mbstring_5.4.11-1_ib42x0.ipk
-Size: 575388
-MD5Sum: 16292385dd4e61321b8d21cc09f83b45
+Size: 575397
+MD5Sum: 1f19a3f8e592149cbdfbc826403c6b12
 Description:  MBString shared module
 
 Package: php5-mod-mcrypt
@@ -9879,10 +9936,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 12905
+Installed-Size: 12911
 Filename: php5-mod-mcrypt_5.4.11-1_ib42x0.ipk
-Size: 13548
-MD5Sum: b206f5c13276bf1bf4bf9334e573335a
+Size: 13563
+MD5Sum: 0d351828b8344086aa076a0d89646eca
 Description:  Mcrypt shared module
 
 Package: php5-mod-mysql
@@ -9894,10 +9951,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 14960
+Installed-Size: 14962
 Filename: php5-mod-mysql_5.4.11-1_ib42x0.ipk
-Size: 15463
-MD5Sum: 14a7d8afed2142e1a461bc326980a633
+Size: 15458
+MD5Sum: 9c342ef27e799858e75fca1814ad04a2
 Description:  MySQL shared module
 
 Package: php5-mod-mysqli
@@ -9909,10 +9966,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 37084
+Installed-Size: 37087
 Filename: php5-mod-mysqli_5.4.11-1_ib42x0.ipk
-Size: 37578
-MD5Sum: 54a4dbeaf077fd2d7f3e1bd0ac9754bc
+Size: 37575
+MD5Sum: df8eebc7339b70968d674299e3148f4a
 Description:  MySQL Improved Extension shared module
 
 Package: php5-mod-openssl
@@ -9924,10 +9981,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 34953
+Installed-Size: 34955
 Filename: php5-mod-openssl_5.4.11-1_ib42x0.ipk
-Size: 35258
-MD5Sum: 983a984e62dfb20128f7d41ecc513efa
+Size: 35256
+MD5Sum: 1e1b71ab694fe4ebed270c59cc588ca1
 Description:  OpenSSL shared module
 
 Package: php5-mod-pcntl
@@ -9941,8 +9998,8 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
 Installed-Size: 9951
 Filename: php5-mod-pcntl_5.4.11-1_ib42x0.ipk
-Size: 10615
-MD5Sum: 2a36e6031e23e5c81f9c3ff274ad9d47
+Size: 10610
+MD5Sum: a2e5bc44b8ac60cdc1cedc7acbb55391
 Description:  PCNTL shared module
 
 Package: php5-mod-pdo-mysql
@@ -9956,8 +10013,8 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
 Installed-Size: 9949
 Filename: php5-mod-pdo-mysql_5.4.11-1_ib42x0.ipk
-Size: 10616
-MD5Sum: 95632a5962ab4d9b970fef59381dcedd
+Size: 10573
+MD5Sum: 5dd74448b3ddd17008e6312bf4012a0f
 Description:  PDO driver for MySQL shared module
 
 Package: php5-mod-pdo-pgsql
@@ -9969,10 +10026,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 12685
+Installed-Size: 12689
 Filename: php5-mod-pdo-pgsql_5.4.11-1_ib42x0.ipk
-Size: 13305
-MD5Sum: 1c1e0557b7aed25de1ffb0d0a5a3755e
+Size: 13216
+MD5Sum: 7ff40f5fb80f93e5e9345a8ea09d6945
 Description:  PDO driver for PostgreSQL shared module
 
 Package: php5-mod-pdo-sqlite
@@ -9984,10 +10041,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 8592
+Installed-Size: 8587
 Filename: php5-mod-pdo-sqlite_5.4.11-1_ib42x0.ipk
-Size: 9202
-MD5Sum: c253e5653ee2073b0bf116c5eacd35d2
+Size: 9208
+MD5Sum: 40002273edd7468b3a4255d9951d9916
 Description:  PDO driver for SQLite 3.x shared module
 
 Package: php5-mod-pdo
@@ -9999,10 +10056,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 35404
+Installed-Size: 35408
 Filename: php5-mod-pdo_5.4.11-1_ib42x0.ipk
-Size: 35950
-MD5Sum: 08e2c2d5a4cfc4a477f61e081674fecb
+Size: 35961
+MD5Sum: 426324a4a1395123fad5f5190e85d556
 Description:  PHP Data Objects shared module
 
 Package: php5-mod-pgsql
@@ -10016,8 +10073,8 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
 Installed-Size: 35668
 Filename: php5-mod-pgsql_5.4.11-1_ib42x0.ipk
-Size: 36219
-MD5Sum: 0cde1f538815b7e544f0b19b97ce1e99
+Size: 36228
+MD5Sum: 39944312b6a7026bf7d314cc74fb8269
 Description:  PostgreSQL shared module
 
 Package: php5-mod-session
@@ -10029,10 +10086,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 25150
+Installed-Size: 25152
 Filename: php5-mod-session_5.4.11-1_ib42x0.ipk
-Size: 25706
-MD5Sum: 447c2170c378935385eb993109618e86
+Size: 25691
+MD5Sum: f1ea64d405467609df519f324e617cb6
 Description:  Session shared module
 
 Package: php5-mod-shmop
@@ -10044,10 +10101,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 3627
+Installed-Size: 3625
 Filename: php5-mod-shmop_5.4.11-1_ib42x0.ipk
-Size: 4246
-MD5Sum: 246714f7a0d8b4847c3f7c36bad7d1f4
+Size: 4242
+MD5Sum: 5d2ed01359310c6c5b419e4ad5bd1f9e
 Description:  Shared Memory shared module
 
 Package: php5-mod-simplexml
@@ -10059,10 +10116,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 15405
+Installed-Size: 15407
 Filename: php5-mod-simplexml_5.4.11-1_ib42x0.ipk
-Size: 16032
-MD5Sum: b0ff3536863cc7bfc0ceec8e5c930a83
+Size: 16026
+MD5Sum: 935957271ad48d1968fa7787cb113b40
 Description:  SimpleXML shared module
 
 Package: php5-mod-soap
@@ -10074,10 +10131,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 110499
+Installed-Size: 110498
 Filename: php5-mod-soap_5.4.11-1_ib42x0.ipk
-Size: 110845
-MD5Sum: 646190a4970804e4bb92e9ce297fbff2
+Size: 110840
+MD5Sum: 1afe367fa232dd0ad955cfa731ba3062
 Description:  SOAP shared module
 
 Package: php5-mod-sockets
@@ -10089,10 +10146,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 17219
+Installed-Size: 17220
 Filename: php5-mod-sockets_5.4.11-1_ib42x0.ipk
-Size: 17861
-MD5Sum: 313afba122827824ec0a4bce7776ca0e
+Size: 17860
+MD5Sum: 3987d3115af92276bd3408b0bcc33174
 Description:  Sockets shared module
 
 Package: php5-mod-sqlite3
@@ -10106,8 +10163,8 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
 Installed-Size: 13783
 Filename: php5-mod-sqlite3_5.4.11-1_ib42x0.ipk
-Size: 14336
-MD5Sum: 3b79f2a49d3e32b1a9f10076af0fbdde
+Size: 14329
+MD5Sum: a822116f289d5df538043a24ba331351
 Description:  SQLite3 shared module
 
 Package: php5-mod-sqlite
@@ -10119,10 +10176,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 19902
+Installed-Size: 19903
 Filename: php5-mod-sqlite_5.4.11-1_ib42x0.ipk
-Size: 20505
-MD5Sum: 9fd55ebce694884e01448dc0569135db
+Size: 20409
+MD5Sum: 734f77b54764009cde89329cd5608e59
 Description:  SQLite 2.x shared module
 
 Package: php5-mod-sysvmsg
@@ -10134,10 +10191,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 5412
+Installed-Size: 5409
 Filename: php5-mod-sysvmsg_5.4.11-1_ib42x0.ipk
-Size: 6045
-MD5Sum: 69170b426f7c804b626decc1af971679
+Size: 6043
+MD5Sum: 6af944e2969cf97e31157ab9eaee1e48
 Description:  System V messages shared module
 
 Package: php5-mod-sysvsem
@@ -10149,10 +10206,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 3212
+Installed-Size: 3211
 Filename: php5-mod-sysvsem_5.4.11-1_ib42x0.ipk
-Size: 3834
-MD5Sum: d8ac0176707751d67bf67d9fd1a4d7d9
+Size: 3841
+MD5Sum: 93984ce631501ca0278ca2acc6079038
 Description:  System V shared memory shared module
 
 Package: php5-mod-sysvshm
@@ -10164,10 +10221,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 4324
+Installed-Size: 4327
 Filename: php5-mod-sysvshm_5.4.11-1_ib42x0.ipk
-Size: 4942
-MD5Sum: b955061185537727258b9c31612cc67f
+Size: 4952
+MD5Sum: 7798aa98978b88ef56326a08ebc60dcb
 Description:  System V semaphore shared module
 
 Package: php5-mod-tokenizer
@@ -10179,10 +10236,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 6185
+Installed-Size: 6187
 Filename: php5-mod-tokenizer_5.4.11-1_ib42x0.ipk
-Size: 6807
-MD5Sum: b5eeefa25089de6b4ddef7cc18c06202
+Size: 6808
+MD5Sum: ed21882ed7f9eb237f7eb07361246e13
 Description:  Tokenizer shared module
 
 Package: php5-mod-xml
@@ -10194,10 +10251,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 14143
+Installed-Size: 14147
 Filename: php5-mod-xml_5.4.11-1_ib42x0.ipk
-Size: 14738
-MD5Sum: a3e2c56679188c978df6648438e7fb5a
+Size: 14748
+MD5Sum: 53b7977317bf387f9111bbcb193a452a
 Description:  XML shared module
 
 Package: php5-mod-xmlreader
@@ -10209,10 +10266,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 8990
+Installed-Size: 8992
 Filename: php5-mod-xmlreader_5.4.11-1_ib42x0.ipk
-Size: 9633
-MD5Sum: 678d7485c575c7e206585f460cb8031d
+Size: 9629
+MD5Sum: 0b94ade791ac30d7595a955cf7fd79b1
 Description:  XMLReader shared module
 
 Package: php5-mod-xmlwriter
@@ -10224,10 +10281,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 9396
+Installed-Size: 9401
 Filename: php5-mod-xmlwriter_5.4.11-1_ib42x0.ipk
-Size: 9972
-MD5Sum: ce8d45eb7d2d5705d3f6ceb039e0d296
+Size: 10012
+MD5Sum: 09c221eb016ff4dbcfaaeddd66f400e6
 Description:  XMLWriter shared module
 
 Package: php5-mod-zip
@@ -10239,10 +10296,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 31391
+Installed-Size: 31396
 Filename: php5-mod-zip_5.4.11-1_ib42x0.ipk
-Size: 31762
-MD5Sum: 778d5ef2893e24df0c1596d354d46ba4
+Size: 31764
+MD5Sum: c87843c7a61694038f133cd92bb49570
 Description:  ZIP shared module
 
 Package: php5
@@ -10254,10 +10311,10 @@ SourceURL: http://www.php.net/distributions/
 Section: lang
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ib42x0
-Installed-Size: 3309
+Installed-Size: 3310
 Filename: php5_5.4.11-1_ib42x0.ipk
 Size: 4104
-MD5Sum: 571a8688cc592811f634083767e31bc7
+MD5Sum: 4a9855866225d1f7217c7225c204865c
 Description:  PHP is a widely-used general-purpose scripting language that is especially
  suited for Web development and can be embedded into HTML.
  This package contains only the PHP config file. You must actually choose
@@ -11071,10 +11128,10 @@ SourceFile: scst-2.2.x-4767.tar.bz2
 SourceURL: https://scst.svn.sourceforge.net/svnroot/scst/branches/2.2.x
 Section: net
 Architecture: ib42x0
-Installed-Size: 44434
+Installed-Size: 44436
 Filename: scst_2.2.x-4767-1_ib42x0.ipk
-Size: 45337
-MD5Sum: a04bf99b430646c12d54d0c1d81757dd
+Size: 45349
+MD5Sum: 28ed306b6a9248c686838b78f7c1dd61
 Description:  SCST open source iSCSI target
 
 Package: setserial
